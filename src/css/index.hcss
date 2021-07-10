@@ -1,0 +1,162 @@
+include(normalize.css)
+
+set(COLOR_POLAR_NORD0, `#2e3440')
+set(COLOR_POLAR_NORD1, `#3b4252')
+set(COLOR_POLAR_NORD2, `#434c5e')
+set(COLOR_POLAR_NORD3, `#4c566a')
+
+set(COLOR_SNOW_NORD4, `#d8dee9')
+set(COLOR_SNOW_NORD5, `#e5e9f0')
+set(COLOR_SNOW_NORD6, `#eceff4')
+
+set(COLOR_FROST_NORD7, `#8fbcbb')
+set(COLOR_FROST_NORD8, `#88c0d0')
+set(COLOR_FROST_NORD9, `#81a1c1')
+set(COLOR_FROST_NORD10, `#5e81ac')
+
+set(COLOR_AURORA_NORD11, `#bf616a')
+set(COLOR_AURORA_NORD12, `#d08770')
+set(COLOR_AURORA_NORD13, `#ebcb8b')
+set(COLOR_AURORA_NORD14, `#a3be8c')
+set(COLOR_AURORA_NORD15, `#b48ead')
+
+set(COLOR_TEXT, COLOR_POLAR_NORD0)
+set(COLOR_BG, COLOR_SNOW_NORD6)
+set(COLOR_BORDERS, COLOR_FROST_NORD10)
+set(COLOR_INPUT_BG, COLOR_SNOW_NORD4)
+
+set(FONT, `saa5050, monospace')
+set(FONT_SMALL, `24px')
+set(FONT_LARGE, `36px')
+
+breakpoint(MOBILE,  max-device-width: 1024px)
+
+/* based on the Mullard SAA505X family of character generators, with tweaks according to my preferences
+ * Made using http://www.pentacom.jp/pentacom/bitfontmaker2/
+ * Much love to https://github.com/robhagemans/hoard-of-bitfonts/blob/master/acorn/saa5050.draw
+ *
+ * ...
+ *
+ * I don't know why I did this. help.
+ */
+@font-face {
+    font-family: saa5050;
+    src: url(saa5050.woff2);
+}
+
+selector(body) {
+    color: COLOR_TEXT;
+    background-color: COLOR_BG;
+    font-family: FONT;
+    font-size: FONT_SMALL;
+    padding: 15px;
+    display: flex;
+
+    on(MOBILE)
+        flex-flow: column;
+    end
+}
+
+.window {
+    background-color: COLOR_BG;
+    border: 2px solid COLOR_BORDERS;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 5px 5px 1.5em 5px;
+    position: relative;
+    width: 20em;
+}
+
+.window:after {
+    bottom: 0;
+    color: COLOR_FROST_NORD10;
+    content: "}";
+    font-size: FONT_LARGE;
+    position: absolute;
+}
+
+.window__title {
+    margin-top: -22px;
+    font-size: FONT_LARGE;
+    background-color: COLOR_BG;
+    color: COLOR_FROST_NORD10;
+    user-select: none;
+}
+
+.window__contents {
+    margin-left: 1em;
+    font-size: FONT_SMALL;
+    hyphens: auto;
+}
+
+dl:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin-left: 1em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+p {
+    max-width: 40em;
+}
+
+hr {
+    border: 1px solid COLOR_POLAR_NORD0;
+}
+
+img {
+    border: 2px solid COLOR_POLAR_NORD0;
+}
+
+figure {
+    margin: 0;
+    display: table;
+}
+
+figcaption {
+    background-color: #2e3440cc;
+    color: COLOR_SNOW_NORD6;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+}
+
+input[type="text"] {
+    background-color: white;
+    outline: 1px solid COLOR_FROST_NORD10;
+    border: none;
+    color: COLOR_TEXT;
+    font-family: saa5050, monospace;
+    font-size: 100%;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid COLOR_AURORA_NORD11;
+}
+
+.meeee {
+    color: #ff3480;
+}
+
+.things {
+    color: #377502;
+}
+
+a.inverted {
+    color: COLOR_FROST_NORD7;
+}
+
+figure div {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+}
+
+/* ff7cad */
