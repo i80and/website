@@ -15,7 +15,7 @@ PAT_CSS_URL = re.compile(r"url\(\"?([^\"\)]+)\"?\)")
 def process_asset(path: Path) -> Path:
     hasher = hashlib.sha512(path.read_bytes())
     sha512 = hasher.hexdigest()[:16]
-    return path.with_stem(path.stem + "-" + sha512)
+    return path.with_name(path.stem + "-" + sha512 + path.suffix)
 
 
 def main() -> None:
@@ -26,7 +26,7 @@ def main() -> None:
     for path in root.glob("**/*"):
         if not path.is_file():
             continue
-        dest_path = output_root.joinpath(Path(*path.parts[len(root.parts):]))
+        dest_path = output_root.joinpath(Path(*path.parts[len(root.parts) :]))
         dest_path.parent.mkdir(parents=True, exist_ok=True)
         if path.suffix in {".html", ".css"}:
             data = path.read_text()
@@ -34,8 +34,13 @@ def main() -> None:
             def replace(match: Match) -> str:
                 match_path = path.parent.joinpath(Path(match.group(1)))
                 new_match_path = process_asset(match_path)
-                assets[match_path.resolve().relative_to(root.resolve())] = new_match_path.resolve().relative_to(root.resolve())
-                updated_path = PurePosixPath(match.group(1)).with_stem(new_match_path.stem)
+                assets[
+                    match_path.resolve().relative_to(root.resolve())
+                ] = new_match_path.resolve().relative_to(root.resolve())
+                updated_path = PurePosixPath(match.group(1))
+                updated_path = updated_path.with_name(
+                    new_match_path.stem + updated_path.suffix
+                )
                 return match.group(0).replace(match.group(1), updated_path.as_posix())
 
             if path.suffix == ".html":
@@ -49,8 +54,9 @@ def main() -> None:
             shutil.copy2(path, dest_path)
 
     for orig_asset_path, new_asset_path in assets.items():
-        output_root.joinpath(orig_asset_path).replace(output_root.joinpath(new_asset_path))
-
+        output_root.joinpath(orig_asset_path).replace(
+            output_root.joinpath(new_asset_path)
+        )
 
 
 if __name__ == "__main__":
