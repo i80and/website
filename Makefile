@@ -1,6 +1,6 @@
 .PHONY: all clean watch
 
-copy_files=index.html saa5050.woff2 sparks-story/index.html
+copy_files=index.html saa5050.woff2 sparks-story/index.html favicon.svg
 copied_files=$(patsubst %,build/%,$(copy_files))
 
 images=images/lupines.png
