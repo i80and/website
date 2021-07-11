@@ -15,7 +15,7 @@ PAT_CSS_URL = re.compile(r"url\(\"?([^\"\)]+)\"?\)")
 def process_asset(path: Path) -> Path:
     hasher = hashlib.sha512(path.read_bytes())
     sha512 = hasher.hexdigest()[:16]
-    return path.with_name(path.stem + "-" + sha512 + path.suffix)
+    return path.with_name(f"immut-{path.stem}-{sha512}{path.suffix}")
 
 
 def main() -> None:
