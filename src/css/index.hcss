@@ -42,6 +42,7 @@ breakpoint(MOBILE,  max-device-width: 1024px)
 @font-face {
     font-family: saa5050;
     src: url(saa5050.woff2);
+    font-display: swap;
 }
 
 selector(body) {
@@ -104,12 +105,17 @@ dl:first-child {
     margin-top: 0;
 }
 
+h1.window__title {
+    font-weight: inherit;
+    margin-bottom: 0;
+}
+
 dd {
     margin-left: 1em;
 }
 
 dt {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 p {
@@ -167,7 +173,7 @@ a.inverted {
     color: COLOR_FROST_NORD7;
 }
 
-figure div {
+.figure-container {
     position: relative;
     display: inline-block;
     max-width: 100%;

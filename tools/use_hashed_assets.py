@@ -7,7 +7,7 @@ import re
 import sys
 import shutil
 
-PAT_HREF_CSS = re.compile(r"href=\"([^\"]*\.css)\"")
+PAT_HREF_CSS = re.compile(r"href=\"([^\"]*\.(?:css|woff2))\"")
 PAT_IMAGES = re.compile(r"src(?:set)?=\"([^\"]*)\"")
 PAT_CSS_URL = re.compile(r"url\(\"?([^\"\)]+)\"?\)")
 
