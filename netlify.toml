@@ -1,4 +1,4 @@
 [[headers]]
-  for = "immut-*.js"
+  for = "_immut_-*"
   [headers.values]
     Cache-Control = "public, max-age=604800, immutable"
