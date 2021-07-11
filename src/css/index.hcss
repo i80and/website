@@ -66,7 +66,7 @@ selector(.window) {
     margin-right: 10px;
     padding: 5px 5px 1.5em 5px;
     position: relative;
-    width: 20em;
+    width: 22em;
 
     on(MOBILE)
       width: calc(100% - 15px);
