@@ -76,7 +76,7 @@ selector(.window) {
 .window:after {
     bottom: 0;
     color: COLOR_FROST_NORD10;
-    content: "}";
+    content: "}" / "";
     font-size: FONT_LARGE;
     position: absolute;
 }
