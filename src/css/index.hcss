@@ -110,6 +110,10 @@ h1.window__title {
     margin-bottom: 0;
 }
 
+a {
+    text-decoration-thickness: from-font;
+}
+
 dd {
     margin-left: 1em;
 }
