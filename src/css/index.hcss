@@ -52,6 +52,7 @@ selector(body) {
     font-size: FONT_SMALL;
     padding: 15px;
     display: flex;
+    align-items: start;
 
     on(MOBILE)
         flex-flow: column;
@@ -76,7 +77,7 @@ selector(.window) {
 .window:after {
     bottom: 0;
     color: COLOR_FROST_NORD10;
-    content: "}" / "";
+    content: "}";
     font-size: FONT_LARGE;
     position: absolute;
 }
@@ -189,7 +190,7 @@ a.inverted {
     flex-wrap: wrap;
     padding: 0;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .gallery--item {

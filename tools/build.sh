@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-IMAGES="images/lupines.png images/skunksub.png images/punk-skunk.png images/skunk-octopus.jpg"
+IMAGES="images/lupines.png images/skunksub.png images/punk-skunk.png images/skunk-octopus.jpg images/PunkSkunk-HD-TygerwolfeDesigns2019.webp"
 FILES_TO_COPY="index.html saa5050.woff2 sparks-story/index.html favicon.svg"
 
 build_image() {
@@ -11,7 +11,6 @@ build_image() {
     mkdir -p build/images
     cp "src/$src" "build/$src"
 	convert -strip -scale 960x -quality 80 "src/$src" "$dest-960.webp"
-	convert -strip -interlace Plane -scale 960x -quality 90 "src/$src" "$dest-960.jpg"
     convert -strip -scale 256x -quality 60 "src/$src" "$dest-thumbnail.webp"
 }
 

@@ -12,24 +12,21 @@
         <meta name="description" content="Heli's homepage showing a list of projects they've worked on.">
     </head>
     <body>
-        <section class="window">
+        <section class="window" id="about-me">
             <h1 class="window--title" aria-label="About Me" title="About Me">fn <span class="meeee">heli</span>() {</h1>
             <div class="window--contents">
                 <div>christian genderqueer skunk hacker</div>
                 <div>builds <span class="things"><strong>things</strong></span>.</div>
                 <div class="figure-container">
                     <figure>
-                        <picture>
-                            <source srcset="images/lupines-960.webp" type="image/webp">
-                            <a href="images/lupines.png"><img src="images/lupines-960.jpg" width=480 height=432 alt="Drawing of skunk-me reading Myst: The Book of Ti'Ana in a field of lupine with a Monarch butterfly sitting on my tail. Drawn by G Pike"></a>
-                        </picture>
+                        <a href="images/lupines.png"><img src="images/lupines-960.webp" width=480 height=432 alt="Drawing of skunk-me reading Myst: The Book of Ti'Ana in a field of lupine with a Monarch butterfly sitting on my tail. Drawn by G Pike"></a>
                         <figcaption class="portrait--caption">Drawn by <a class="inverted" href="https://artofgpike.com/">G Pike (@gpike_)</a></figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <section class="window">
+        <section class="window" id="portfolio">
             <h1 class="window--title" aria-label="Things I've Built" title="Things I've Built">fn <span class="things">things</span>() {</h1>
             <div class="window--contents">
                 <dl>
@@ -49,26 +46,32 @@
             </div>
         </section>
 
-        <section class="window">
-            <h1 class="window--title" aria-label="Gallery of Art Of Me" title="Gallery of Art Of Me">fn <span class="things">gallery</span>() {</h1>
+        <section class="window" id="gallery">
+            <h1 class="window--title" aria-label="Gallery of Art Of Me" title="Gallery of Art Of Me">fn gallery() {</h1>
             <div class="window--contents">
                 <ul class="gallery">
                     <li class="gallery--item">
-                        <figure>
+                        <figure id="gallery-skunksub">
                             <a href="images/skunksub.png"><img width=128 height="102.5" src="images/skunksub-thumbnail.webp" alt="Masculine variant of skunk me sitting in a Triton submersible, looking at all the tropical fish around me."></a>
                             <figcaption>A beautiful commission of me by the astonishingly talented <a href="https://artofgpike.com/">G Pike</a>. It's a Triton sub! Building a submarine is very high on my bucket list.</figcaption>
                         </figure>
                     </li>
                     <li class="gallery--item">
-                        <figure>
+                        <figure id="gallery-skunkoctopus">
                             <a href="images/skunk-octopus.jpg"><img width=128 height=128 src="images/skunk-octopus-thumbnail.webp" alt="A skunk-patterned octopus with a slightly fluffy rear tentacle, with the bi flag painted behind."></a>
                             <figcaption><a href="https://mobile.twitter.com/blacksmoke1033/">Fumi</a> does great work!! I firmly believe that octoskunks will rule the world.</figcaption>
                         </figure>
                     </li>
                     <li class="gallery--item">
-                        <figure>
+                        <figure id="gallery-punk-skunk">
                             <a href="images/punk-skunk.png"><img width=128 height="155.5" src="images/punk-skunk-thumbnail.webp" alt="Masculine variant of skunk me, wearing a leather jacket and a T-shirt that says 'git checkout -b foxquill'"></a>
                             <figcaption>The first comission I ever got! I gave <a href="https://ritwellart.carrd.co/">Ritwell</a> very vague direction, and he knocked it out of the park!</figcaption>
+                        </figure>
+                    </li>
+                    <li class="gallery--item">
+                        <figure id="gallery-punk-skunk-2">
+                            <a href="images/PunkSkunk-HD-TygerwolfeDesigns2019.webp"><img width=128 height="103" src="images/PunkSkunk-HD-TygerwolfeDesigns2019-thumbnail.webp" alt=""></a>
+                            <figcaption>Doodle commission by the lovely <a href="https://twitter.com/tygerwulfe">Tygerwolfe!</a></figcaption>
                         </figure>
                     </li>
                 </ul>
