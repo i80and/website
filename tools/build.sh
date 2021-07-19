@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-IMAGES="images/lupines.png images/skunksub.png images/punk-skunk.png images/skunk-octopus.jpg images/PunkSkunk-HD-TygerwolfeDesigns2019.webp"
+IMAGES="images/lupines.webp images/skunksub.webp images/punk-skunk.webp images/skunk-octopus.jpg images/PunkSkunk-HD-TygerwolfeDesigns2019.webp"
 FILES_TO_COPY="index.html saa5050.woff2 sparks-story/index.html favicon.svg"
 
 build_image() {
