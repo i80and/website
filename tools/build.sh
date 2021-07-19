@@ -27,6 +27,6 @@ for f in $FILES_TO_COPY; do
     cp "src/$f" "build/$f"
 done
 
-tools/hasp src/css/index.hcss > build/index.css
+tools/hasp src/css/index.hcss | tools/tidy-css.py -o build/index.css
 
 ./tools/use_hashed_assets.py build public
