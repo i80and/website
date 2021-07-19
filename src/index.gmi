@@ -1,0 +1,38 @@
+# It's Heli!
+
+## About Me!
+
+Christian genderqueer skunk hacker.
+
+## Things I've Built
+
+### marian
+
+A civilized tiny full text search server in pure JS.
+
+=> https://github.com/mongodb/marian marian
+=> https://dl.acm.org/doi/10.1145/2063576.2063584 dirichlet+ relevancy function
+=> https://dl.acm.org/doi/10.1145/324133.324140 HITS link analysis for authority scores
+=> http://snowball.tartarus.org/algorithms/english/stemmer.html porter2 stemming
+
+### snooty-parser
+
+=> https://github.com/mongodb/snooty-parser snooty-parser
+
+A hella' fast reStructuredText-based documentation tool. mostly for internal use, but darn cool.
+
+### terrain generator
+
+I wrote a toy terrain generator in college using domain-warped noise. I also ported it to run in fragment shader!
+
+=> https://i80and.github.io/warp/ terrain generator
+=> https://iquilezles.org/www/articles/warp/warp.htm domain-warped noise
+=> https://www.shadertoy.com/view/wltcW2 fragment shader
+
+### The Spark's Story
+
+=> sparks-story.gmi The Spark's Story
+
+A story I wrote in college in a week or something. I need to write moar.
+
+It's stemapunk. Sorry. It was 2012.

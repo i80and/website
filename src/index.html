@@ -13,39 +13,65 @@
     </head>
     <body>
         <section class="window">
-            <h1 class="window__title" aria-label="About Me" title="About Me">fn <span class="meeee">heli</span>() {</h1>
-            <div class="window__contents">
+            <h1 class="window--title" aria-label="About Me" title="About Me">fn <span class="meeee">heli</span>() {</h1>
+            <div class="window--contents">
                 <div>christian genderqueer skunk hacker</div>
                 <div>builds <span class="things"><strong>things</strong></span>.</div>
                 <div class="figure-container">
                     <figure>
                         <picture>
-                            <source srcset="images/lupines.webp" type="image/webp">
-                            <img src="images/lupines.jpg" width=480 height=432 alt="Drawing of skunk-me reading Myst: The Book of Ti'Ana in a field of lupine with a Monarch butterfly sitting on my tail. Drawn by G Pike">
+                            <source srcset="images/lupines-960.webp" type="image/webp">
+                            <a href="images/lupines.png"><img src="images/lupines-960.jpg" width=480 height=432 alt="Drawing of skunk-me reading Myst: The Book of Ti'Ana in a field of lupine with a Monarch butterfly sitting on my tail. Drawn by G Pike"></a>
                         </picture>
-                        <figcaption>Drawn by <a class="inverted" href="https://twitter.com/gpike_">G Pike (@gpike_)</a></figcaption>
+                        <figcaption class="portrait--caption">Drawn by <a class="inverted" href="https://artofgpike.com/">G Pike (@gpike_)</a></figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
         <section class="window">
-            <h1 class="window__title" aria-label="Things I've Built" title="Things I've Built">fn <span class="things">things</span>() {</h1>
-            <div class="window__contents">
+            <h1 class="window--title" aria-label="Things I've Built" title="Things I've Built">fn <span class="things">things</span>() {</h1>
+            <div class="window--contents">
                 <dl>
                     <dt><a href="https://github.com/mongodb/marian">marian</a></dt>
                     <dd>a civilized tiny full text search server in pure JS. <a href="https://dl.acm.org/doi/10.1145/2063576.2063584">dirichlet+</a> relevancy mixed with <a href="https://dl.acm.org/doi/10.1145/324133.324140">HITS</a> link analysis for authority, <a href="http://snowball.tartarus.org/algorithms/english/stemmer.html">porter2</a> stemming</dd>
                     <dt><a href="https://github.com/mongodb/snooty-parser">snooty</a></dt>
                     <dd>hella' fast reStructuredText-based documentation tool. mostly for internal use, but darn cool</dd>
+                    <dt><a href="https://i80and.github.io/warp/">terrain generator</a></dt>
+                    <dd>toy JS terrain generator I wrote in college using <a href="https://iquilezles.org/www/articles/warp/warp.htm">domain-warped noise</a>.
+                        bonus: I also ported it to run in a <a href="https://www.shadertoy.com/view/wltcW2">fragment shader</a></dd>
                     <dt><a href="sparks-story/index.html">The Spark's Story</a></dt>
                     <dd><div>a story I wrote in college in a week or something. I need to write moar</div>
 
                         <div>it's steampunk. sorry. it was 2012</div>
                     </dd>
-                    <dt><a href="https://i80and.github.io/warp/">terrain generator</a></dt>
-                    <dd>toy JS terrain generator I wrote in college using <a href="https://iquilezles.org/www/articles/warp/warp.htm">domain-warped noise</a>.
-                        bonus: I also ported it to run in a <a href="https://www.shadertoy.com/view/wltcW2">fragment shader</a></dd>
                 </dl>
+            </div>
+        </section>
+
+        <section class="window">
+            <h1 class="window--title" aria-label="Gallery of Art Of Me" title="Gallery of Art Of Me">fn <span class="things">gallery</span>() {</h1>
+            <div class="window--contents">
+                <ul class="gallery">
+                    <li class="gallery--item">
+                        <figure>
+                            <a href="images/skunksub.png"><img width=128 height="102.5" src="images/skunksub-thumbnail.webp" alt="Masculine variant of skunk me sitting in a Triton submersible, looking at all the tropical fish around me."></a>
+                            <figcaption>A beautiful commission of me by the astonishingly talented <a href="https://artofgpike.com/">G Pike</a>. It's a Triton sub! Building a submarine is very high on my bucket list.</figcaption>
+                        </figure>
+                    </li>
+                    <li class="gallery--item">
+                        <figure>
+                            <a href="images/skunk-octopus.jpg"><img width=128 height=128 src="images/skunk-octopus-thumbnail.webp" alt="A skunk-patterned octopus with a slightly fluffy rear tentacle, with the bi flag painted behind."></a>
+                            <figcaption><a href="https://mobile.twitter.com/blacksmoke1033/">Fumi</a> does great work!! I firmly believe that octoskunks will rule the world.</figcaption>
+                        </figure>
+                    </li>
+                    <li class="gallery--item">
+                        <figure>
+                            <a href="images/punk-skunk.png"><img width=128 height="155.5" src="images/punk-skunk-thumbnail.webp" alt="Masculine variant of skunk me, wearing a leather jacket and a T-shirt that says 'git checkout -b foxquill'"></a>
+                            <figcaption>The first comission I ever got! I gave <a href="https://ritwellart.carrd.co/">Ritwell</a> very vague direction, and he knocked it out of the park!</figcaption>
+                        </figure>
+                    </li>
+                </ul>
             </div>
         </section>
     </body>
