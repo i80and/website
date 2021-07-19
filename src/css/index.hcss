@@ -51,12 +51,17 @@ selector(body) {
     font-family: FONT;
     font-size: FONT_SMALL;
     padding: 15px;
+    on(MOBILE)
+        padding: 10px 0 0 0;
+    end
+}
+
+selector(body.landing) {
     display: flex;
     align-items: start;
 
     on(MOBILE)
         flex-flow: column;
-        padding: 10px 0 0 0;
     end
 }
 
