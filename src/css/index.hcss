@@ -202,4 +202,14 @@ a.inverted {
   list-style-type: none
 }
 
+.click-doodad {
+  color: COLOR_AURORA_NORD11;
+  position: fixed;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  opacity: 1;
+  user-select: none;
+}
+
 /* ff7cad */
