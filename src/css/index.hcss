@@ -211,6 +211,7 @@ a.inverted {
   opacity: 1;
   user-select: none;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 /* ff7cad */
