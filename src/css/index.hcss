@@ -111,6 +111,12 @@ dl:first-child {
     margin-top: 0;
 }
 
+h2 {
+    font-size: FONT_LARGE;
+    font-weight: inherit;
+    margin-bottom: 0;
+}
+
 h1.window--title {
     font-weight: inherit;
     margin-bottom: 0;

@@ -27,17 +27,33 @@
                         <figcaption class="portrait--caption">Drawn by <a class="inverted" href="https://artofgpike.com/">G Pike (@gpike_)</a></figcaption>
                     </figure>
                 </div>
+
+                <dl>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:&#x68;&#x65;&#x6c;&#x69;&#x2b;&#x77;&#x65;&#x62;&#x73;&#x69;&#x74;&#x65;&#x40;&#x68;&#x65;&#x6c;&#x69;&#x2e;&#x70;&#x65;&#x74;">&#x68;&#x65;&#x6c;&#x69;&#x40;&#x68;&#x65;&#x6c;&#x69;&#x2e;&#x70;&#x65;&#x74;</a></dd>
+
+                    <dt>GitHub</dt>
+                    <dd><a rel="me" href="https://github.com/i80and">i80and</a></dd>
+
+                    <dt>Mastodon</dt>
+                    <dd><a rel="me" href="https://chitter.xyz/@heli">heli@chitter.xyz</a></dd>
+                </dl>
             </div>
         </section>
 
         <section class="window" id="portfolio">
             <h1 class="window--title" aria-label="Things I've Built" title="Things I've Built"><span aria-hidden="true">fn <span class="things">things</span>() {</span></h1>
             <div class="window--contents">
+                <h2>recent</h2>
                 <dl>
                     <dt><a href="https://github.com/mongodb/marian">marian</a></dt>
                     <dd>a civilized tiny full text search server in pure JS. <a href="https://dl.acm.org/doi/10.1145/2063576.2063584">dirichlet+</a> relevancy mixed with <a href="https://dl.acm.org/doi/10.1145/324133.324140">HITS</a> link analysis for authority, <a href="http://snowball.tartarus.org/algorithms/english/stemmer.html">porter2</a> stemming</dd>
                     <dt><a href="https://github.com/mongodb/snooty-parser">snooty</a></dt>
                     <dd>hella' fast reStructuredText-based documentation tool. mostly for internal use, but darn cool</dd>
+                </dl>
+                <hr>
+                <h2>vintage</h2>
+                <dl>
                     <dt><a href="https://i80and.github.io/warp/">terrain generator</a></dt>
                     <dd>toy JS terrain generator I wrote in college using <a href="https://iquilezles.org/www/articles/warp/warp.htm">domain-warped noise</a>.
                         bonus: I also ported it to run in a <a href="https://www.shadertoy.com/view/wltcW2">fragment shader</a></dd>
@@ -45,6 +61,10 @@
                     <dd><div>a story I wrote in college in a week or something. It's not great. I need to write moar</div>
                         <div>it's steampunk. sorry. it was 2012</div>
                     </dd>
+                    <dt><a href="https://github.com/haiku/haiku/commit/f31b1a2faf808b6d39636a02366ba98a0ae6ebb2">Haiku Password Hashing</a></dt>
+                    <dd>I replaced the <a href="https://www.haiku-os.org/">Haiku OS</a> password hashing implementation, previously traditional DES, with <a href="https://www.tarsnap.com/scrypt.html">scrypt()</a>.</dd>
+                    <dt><a href="https://github.com/OpenRA/OpenRA/pull/3375">OpenRA Pathfinding Fast Fail</a></dt>
+                    <dd>I added a fast fail to <a href="https://www.openra.net/">OpenRA</a>'s pathfinding. On map load, the world is split into a set of domains based on traversability for each movement class. If a pathing request's source and destination locations belong to different domains, the pathfinder can immediately abort instead of scanning every cell.</dd>
                 </dl>
             </div>
         </section>
@@ -80,6 +100,7 @@
                 </ul>
             </div>
         </section>
+
         <script async src="squeak.js"></script>
     </body>
 </html>
